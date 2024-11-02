@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d599de1e96.js" crossorigin="anonymous"></script>
+</head>
+<body id="Body">
+
+    <div class="video-background">
+        <video autoplay muted loop onerror="this.style.display='none';" preload="auto">
+            <source src="3130182-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        
+            Your browser does not support the video tag.
+        </video>
+        <div class="fallback"><img src="" alt=""></div>
+    </div>
+
+    <div id="Header">
+       <div class="container">
+          <nav>
+            <img src="./logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#Header"><b>Home</b></a></li>
+                <li><a href="#About"><b>About</b></a></li>
+                <li><a href="#Services"><b>Services</b></a></li>
+                <li><a href="#Portfolio"><b>Portfolio</b></a></li>
+                <li><a href="#Contact"><b>Contact</b></a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <h1>Hello, <br> I'm <span>Enzooo,</span><br> Sofware Developer</h1>
+            <p>A Back-End Developer based in Philippines</p>
+         </div>
+       </div>
+    </div>
+
+    <!---about----->
+    
+    <div id="About">
+        <div class="container">
+           <div class="row">
+            <div class="about-col-1">
+                <img src="./0000.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"><span> About me</span></h1>
+                <p>As a student of BSIT, you have already taken an important step in your journey to becoming a great programmer and
+                   successful back-end developer.  With hard work, dedication, and persistence, you will be able to reach your goal.
+                   To become a great programmer, it is important to have a strong foundation in computer science and programming concepts. 
+                   Continuously learn and practice coding through various projects, coding challenges, and online tutorials. 
+                   Read books and articles about programming, as well as about new technologies and trends in the field. 
+                   Stay updated with the latest advancements and developments in the industry.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills<p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><b>HTML/CSS/JS</b></span><BR>Semi meduim knowledge HTML and CSS skill. Simple website functional website.  </li>
+                        <li><span><b>JAVA/SPRINGBOOT/OOP</b></span><BR>Entry level Back-end knowledge. Having knowledge in springboot framework.
+                             High understanding about 4pillars of object oriented programing.</li>
+                        <li><span>Mysql/Query</span><BR>basic knowledge of Querying and understanding about DBMS.</li>
+                        <li><span>Linux</span><BR>Background about linux command using virtual box.</li>  
+                        <li><span>vb.net</span><BR>basic knowledge about .net and understanding how it become different</li>                            
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - 2024</span><BR>Using html/css/js I create a clone of social media web application kinda use API for my map featured inside the app.</li>
+                        <li><span>2024</span><BR> I create calculator and tiktak toe using vb.net for school projects. Also I create calculator using java ang using swing i create my UI.</li>
+                        <li><span>2024 </span><BR> I create this fully functional forfolio with using html/css/js</li>
+                        <li><span>2023 </span><BR> I create calculator and tic tac toe calculator using vb.net</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>College</span><BR>ICCT Colleges - BS information technologies </li>
+                        <li><span>Senior Highschool</span><BR>Don antonio lee chi uan integrated school - General Academic Strand</li>
+                        <li><span>Highschool</span><BR>Don antonio lee chi uan integrated school</li>
+                    </ul>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <!--- -------services------------ -->
+
+    <div id="Services">
+        <div class="container">
+
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design refers to the process of creating and arranging the content, layout, and overall look and feel of a website. It involves a combination of graphic design, user experience (UX) design, and front-end development. A well-designed website should not only be aesthetically pleasing but also be user-friendly, functional, and easily accessible to users.</p>
+                    <a href="https://www.interaction-design.org/literature/topics/web-design"><b>Learn more</b></a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>JAVA Back-End</h2>
+                    <p>A Java back end handles the server-side operations of an application, processing client requests and managing business logic, data, and communication with databases. It uses frameworks like Spring and Hibernate to organize code, simplify database access, and manage security with tools like Spring Security and JWT. Java back ends typically expose APIs using RESTful services, exchanging data in formats like JSON or XML. These applications run on servers such as Tomcat or GlassFish and are packaged as WAR or JAR files for deployment on servers or cloud platforms. In essence, the Java back end ensures smooth client-server interactions by executing core application logic and managing data flow.</p>
+                    <a href="https://www.java.com/en/#:~:text=Java%20|%20Oracle.%20Manual%20update%20required%20for%20some"><b>Learn more</b></a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>Figma Design</h2>
+                    <p>A **Figma** is a web-based design tool that facilitates user interface (UI) and user experience (UX) design, allowing designers to create, collaborate, and prototype digital projects in real-time. It supports vector graphics, making it easy to create detailed, scalable designs, and offers components like reusable design elements. Figma enables seamless collaboration, allowing multiple team members to work on the same file simultaneously. With features like prototyping, you can simulate how an app or website will function. Figma also integrates with various tools for handoff to developers, making the design-to-development process more efficient and organized.</p>
+                    <a href="https://www.figma.com/"><b>Learn more</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio----------->
+    <div id="Portfolio">
+         <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="wrork-list">
+                <div class="work">
+                    <img src="./work-1.png">
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>Our social media app is a platform that connects people from all over the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./work-2.png">
+                    <div class="layer">
+                    <h3>Music app</h3>
+                        <p>Our social media app is a platform that connects people from all over the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./work-3.png">
+                    <div class="layer">
+                    <h3>online shopping app</h3>
+                        <p>Our social media app is a platform that connects people from all over the world. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> 
+         </div>
+         <a href="#" class="btn">See more</a>
+     </div>
+    </div>
+    <!----------contact------------->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="Sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>Dellomasjhoncarlo@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0919 623 0422</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/johncarlo.dellomas"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="../img/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" email="email" placeholder="Your email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="copyright"><p> Rates" <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>"</p></div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+             for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+             }
+             for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+             }
+             event.currentTarget.classList.add("active-link");
+             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+            var sidemenu = document.getElementById("sidemenu")
+
+            function openmenu(){
+                sidemenu.style.right = "0"
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px"
+            }
+
+    </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz0ARjy4qOUJQ1fhun34ltYdFYPfLno3df_NziFgkX7H4-c2Z9r81IxTOLtE5cgmuUr/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        gsap.fromTo(".container", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1.5, ease: "power1.out" });
+
+       // gsap.fromTo(".container", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1.5, ease: "power1.out" });
+    });
+</script>
+
+
+</body>
+</html>
